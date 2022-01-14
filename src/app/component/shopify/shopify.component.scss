@@ -1,0 +1,80 @@
+.main {
+  .wrapper-background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    img {
+      width: inherit;
+      min-height: 900px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .header {
+    padding: 45px 20px;
+    .wrapper-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .logo-link {
+        .logo {
+          width: 120px;
+        }
+      }
+    }
+  }
+  .hero {
+    color: white;
+    padding: 0 20px;
+    .container {
+      text-align: center;
+      .hero-title {
+        font-size: 28px;
+      }
+      .hero-descr {
+        font-size: 22px;
+        font-weight: 500;
+      }
+      .hero-form {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 4px 0;
+
+        .hero-email {
+          width: 100%;
+          box-sizing: border-box;
+          height: 52px;
+          border-radius: 4px;
+          margin: 0 0 15px;
+          border: 1px solid black;
+          font-size: 16px;
+          padding: 8px 10px;
+          outline: none;
+        }
+        .hero-btn {
+          width: 100%;
+          box-sizing: border-box;
+          height: 52px;
+          border-radius: 4px;
+          margin: 0 0 15px;
+          background: black;
+          border: 1px solid black;
+          color: white;
+          font-size: 18px;
+        }
+      }
+      .form-descr {
+        padding: 5px 15px;
+        font-size: 12px;
+        font-weight: 300;
+      }
+      .hero-image {
+        width: 280px;
+        max-width: 310px;
+      }
+    }
+  }
+}
