@@ -1,17 +1,4 @@
 .main {
-  // .wrapper-background {
-  //   display: none;
-  //   width: 100%;
-  //   position: absolute;
-  //   top: 0;
-  //   z-index: -1;
-  //   img {
-  //     width: inherit;
-  //     height: 700px;
-  //     object-fit: cover;
-  //     object-position: center;
-  //   }
-  // }
   .header {
     position: absolute;
     width: 100%;
@@ -20,10 +7,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      .logo-link {
-        .logo {
-          width: 120px;
-        }
+      .logo {
+        width: 120px;
       }
     }
   }
@@ -127,7 +112,6 @@
   }
   .cooperation {
     padding: 0 20px;
-
     .content {
       display: flex;
       flex-wrap: wrap;
@@ -137,7 +121,7 @@
       border-top: 1px solid #6b7177;
       border-bottom: 1px solid #6b7177;
       padding: 30px 0;
-      .wrapper-cooperation-logo {
+      .cooperation-logo-item {
         width: 115px;
         margin: 7px 10px;
         img {
@@ -198,14 +182,14 @@
 @media (min-width: 490px) {
   .hero-form {
     flex-direction: row !important;
-  }
-  .hero-email {
-    width: 70% !important;
-    margin: 0 8px 8px !important;
-  }
-  .hero-btn {
-    width: 145px !important;
-    margin: 0 8px 8px !important;
+    .hero-email {
+      width: 70% !important;
+      margin: 0 8px 8px !important;
+    }
+    .hero-btn {
+      width: 145px !important;
+      margin: 0 8px 8px !important;
+    }
   }
 }
 @media (min-width: 768px) {
@@ -214,22 +198,18 @@
   }
   .hero {
     padding: 150px 140px 70px !important;
-  }
-  .hero-title {
-    font-size: 35px !important;
-  }
-  .hero-descr {
-    font-size: 28px !important;
-  }
-  .hero-form {
-    padding: 10px 100px;
-    .hero-email {
+    .hero-title {
+      font-size: 35px !important;
     }
-    .hero-btn {
+    .hero-descr {
+      font-size: 28px !important;
     }
-  }
-  .form-descr {
-    font-size: 14px !important;
+    .hero-form {
+      padding: 10px 100px;
+    }
+    .form-descr {
+      font-size: 14px !important;
+    }
   }
   .services {
     padding: 0 100px 80px !important;
@@ -256,6 +236,4 @@
       justify-content: flex-end !important;
     }
   }
-}
-@media (min-width: 1024px) {
 }

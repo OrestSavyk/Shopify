@@ -1,7 +1,4 @@
 <main class="main">
-  <!-- <div class="wrapper-background">
-    <img src="assets/img/download.svg" alt="Background" />
-  </div> -->
   <section class="header">
     <div class="wrapper-logo">
       <a href="#" class="logo-link">
@@ -41,82 +38,31 @@
   <section class="services">
     <div class="container">
       <ul class="services-list">
-        <li class="services-item">
-          <img src="assets/icon/service/device.png" alt="icon device" />
-          <h3 class="services-subtitle">Customizable templates</h3>
-          <p class="services-descr">
-            Free website designs to launch your store quickly and easily.
-          </p>
-        </li>
-        <li class="services-item">
-          <img src="assets/icon/service/money.png" alt="icon money" />
-          <h3 class="services-subtitle">All in one</h3>
-          <p class="services-descr">
-            Shopify takes care of everything from marketing and payments to
-            secure transactions and shipping.
-          </p>
-        </li>
-        <li class="services-item">
-          <img src="assets/icon/service/group.png" alt="icon group" />
-          <h3 class="services-subtitle">A safe and efficient platform</h3>
-          <p class="services-descr">
-            More than a million users trust Shopify to manage their online
-            stores.
-          </p>
-        </li>
+        <ng-container *ngFor="let servicesItem of ServicesItems">
+          <li class="services-item">
+            <img
+              [src]="'assets/icon/service/' + servicesItem.icon"
+              [alt]="servicesItem.alt"
+            />
+            <h3 class="services-subtitle">{{ servicesItem.subtitle }}</h3>
+            <p class="services-descr">
+              {{ servicesItem.description }}
+            </p>
+          </li>
+        </ng-container>
       </ul>
     </div>
   </section>
   <section class="cooperation">
     <div class="content">
-      <div class="wrapper-cooperation-logo">
-        <img
-          src="assets/img/cooperationLogo/cee-cees-closet-large-72b3934735d6d9c80ab6e49bb691f0a499d3796886616ef7730d992b64348ca6.png"
-          alt="SEE SEES"
-        />
-      </div>
-      <div class="wrapper-cooperation-logo">
-        <img
-          src="assets/img/cooperationLogo/nalata-nalata-large-3add77fd7a7030bfc5160c8c9e109263e30e706ece8872324f05ca87b9f9c058.png"
-          alt="NALATA"
-        />
-      </div>
-      <div class="wrapper-cooperation-logo">
-        <img
-          src="assets/img/cooperationLogo/kirrin-finch-large-5eac21f691ca33865f5379e3c929f0455f2c60eac456acde2ecb5e7e8cf0b6b6.png"
-          alt="KIRRIN"
-        />
-      </div>
-      <div class="wrapper-cooperation-logo">
-        <img
-          src="assets/img/cooperationLogo/tokyo-bike-large-e665c13f78f1ff857c63acfe106003071ab5789a56d98e06036cd552a11afb7c.png"
-          alt="TOKYOBIKE"
-        />
-      </div>
-      <div class="wrapper-cooperation-logo">
-        <img
-          src="assets/img/cooperationLogo/meso-goods-large-3c91df696ae24868cf3158a03b219ad3d59e1cc79cd6bcfd5e00e4caf24f1590.png"
-          alt="MESO"
-        />
-      </div>
-      <div class="wrapper-cooperation-logo">
-        <img
-          src="assets/img/cooperationLogo/coco-and-breezy-large-e7ffaba59d09afb9ecb7e12463cb72920817438c900b887209608c94fc9c9ec0.png"
-          alt="COCO AND BREEZY"
-        />
-      </div>
-      <div class="wrapper-cooperation-logo">
-        <img
-          src="assets/img/cooperationLogo/brooklyn-museum-large-14623fdd62a9c87241ee2d84b3e15feea4b30061839d0e20d1bd38a1d847286b.png"
-          alt="BROOKLYN Museum"
-        />
-      </div>
-      <div class="wrapper-cooperation-logo">
-        <img
-          src="assets/img/cooperationLogo/adore-me-large-7a7f06a74d88d7a5e019800da52ccc54334c96159f3761173c0c5cd37e03e38d.png"
-          alt="Adore Me"
-        />
-      </div>
+      <ng-container *ngFor="let cooperationItem of CooperationLogosItems">
+        <div class="cooperation-logo-item">
+          <img
+            [src]="'assets/img/cooperationLogo/' + cooperationItem.source"
+            [alt]="cooperationItem.alt"
+          />
+        </div>
+      </ng-container>
     </div>
   </section>
   <section class="get-started">
