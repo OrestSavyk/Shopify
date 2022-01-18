@@ -38,7 +38,7 @@
   <section class="services">
     <div class="container">
       <ul class="services-list">
-        <ng-container *ngFor="let servicesItem of ServicesItems">
+        <ng-container *ngFor="let servicesItem of servicesItems">
           <li class="services-item">
             <img
               [src]="'assets/icon/service/' + servicesItem.icon"
@@ -55,7 +55,7 @@
   </section>
   <section class="cooperation">
     <div class="content">
-      <ng-container *ngFor="let cooperationItem of CooperationLogosItems">
+      <ng-container *ngFor="let cooperationItem of cooperationLogosItems">
         <div class="cooperation-logo-item">
           <img
             [src]="'assets/img/cooperationLogo/' + cooperationItem.source"

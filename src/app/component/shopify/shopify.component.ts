@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { COOPERATION_LOGOS_ITEMS, SERVICES_ITEMS } from './shopify.constant';
 
 @Component({
@@ -6,10 +6,8 @@ import { COOPERATION_LOGOS_ITEMS, SERVICES_ITEMS } from './shopify.constant';
   templateUrl: './shopify.component.html',
   styleUrls: ['./shopify.component.scss'],
 })
-export class ShopifyComponent implements OnInit {
-  ServicesItems: any[] = SERVICES_ITEMS;
-  CooperationLogosItems: any[] = COOPERATION_LOGOS_ITEMS;
+export class ShopifyComponent {
+  servicesItems: any[] = SERVICES_ITEMS;
+  cooperationLogosItems: any[] = COOPERATION_LOGOS_ITEMS;
   constructor() {}
-
-  ngOnInit(): void {}
 }
