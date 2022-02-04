@@ -34,7 +34,7 @@
     font-size: 22px;
     font-weight: 500;
   }
-  &__form {
+  .hero-form {
     width: 100%;
     justify-content: center;
     display: flex;
@@ -69,7 +69,7 @@
       }
     }
   }
-  &__form__descr {
+  .hero-form__descr {
     padding: 5px 15px;
     font-size: 11px;
     font-weight: 300;
@@ -84,32 +84,32 @@
 }
 .services {
   padding: 0 30px 80px;
-  &__list {
+  .services-list {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
-    &__item {
-      margin-top: 45px;
-      &__imagine {
-        width: 65px;
-        color: #008060;
-      }
-      &__subtitle {
-        font-size: 16px;
-      }
-      &__descr {
-        color: #6b7177;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 26px;
-      }
+  }
+  &__item {
+    margin-top: 45px;
+    &__imagine {
+      width: 65px;
+      color: #008060;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__descr {
+      color: #6b7177;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 26px;
     }
   }
 }
 .cooperation {
   padding: 0 20px;
-  &__content {
+  .cooperation-content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -118,12 +118,12 @@
     border-top: 1px solid #6b7177;
     border-bottom: 1px solid #6b7177;
     padding: 30px 0;
-    &__logo__item {
-      width: 115px;
-      margin: 7px 10px;
-      &__imagine {
-        width: 100%;
-      }
+  }
+  &__logo{
+    width: 115px;
+    margin: 7px 10px;
+    &__imagine {
+      width: 100%;
     }
   }
 }
@@ -177,7 +177,7 @@
 }
 @media (min-width: 490px) {
   .hero {
-    &__form {
+    .hero-form {
       flex-direction: row;
       &__email {
         width: 70%;
@@ -208,24 +208,24 @@
       &__descr {
         font-size: 28px;
       }
-      &__form {
+      .hero-form {
         padding: 10px 100px;
       }
-      &__form__descr {
+      .hero-form__descr {
         font-size: 14px;
       }
     }
   }
   .services {
     padding: 0 100px 80px;
-    &__list {
+    .services-list {
       flex-direction: row;
       flex-wrap: wrap;
       margin: 0;
-      &__item {
-        width: calc(88% / 3);
-        margin: 0 auto;
-      }
+    }
+    &__item {
+      width: calc(88% / 3);
+      margin: 0 auto;
     }
   }
   .cooperation {

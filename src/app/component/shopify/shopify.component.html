@@ -12,15 +12,15 @@
     <div class="hero__container">
       <h1 class="hero__title">Sell online with Shopify</h1>
       <h2 class="hero__descr">Trusted by millions of businesses worldwide</h2>
-      <form action="" class="hero__form">
+      <form action="" class="hero-form">
         <input
           type="text"
-          class="hero__form__email"
+          class="hero-form__email"
           placeholder="Enter your email address"
         />
-        <button class="hero__form__btn" type="submit">Start free trial</button>
+        <button class="hero-form__btn" type="submit">Start free trial</button>
       </form>
-      <p class="hero__form__descr">
+      <p class="hero-form__descr">
         Try Shopify free for 14 days, no credit card required. By entering your
         email, you agree to receive marketing emails from Shopify.
       </p>
@@ -34,18 +34,18 @@
     </div>
   </section>
   <section class="services">
-    <ul class="services__list">
+    <ul class="services-list">
       <ng-container *ngFor="let servicesItem of servicesItems">
-        <li class="services__list__item">
+        <li class="services__item">
           <img
-            class="services__list__item__imagine"
+            class="services__item__imagine"
             [src]="'assets/icon/service/' + servicesItem.icon"
             [alt]="servicesItem.alt"
           />
-          <h3 class="services__list__item__subtitle">
+          <h3 class="services__item__subtitle">
             {{ servicesItem.subtitle }}
           </h3>
-          <p class="services__list__item__descr">
+          <p class="services__item__descr">
             {{ servicesItem.description }}
           </p>
         </li>
@@ -53,11 +53,11 @@
     </ul>
   </section>
   <section class="cooperation">
-    <div class="cooperation__content">
+    <div class="cooperation-content">
       <ng-container *ngFor="let cooperationItem of cooperationLogosItems">
-        <div class="cooperation__content__logo__item">
+        <div class="cooperation__logo">
           <img
-            class="cooperation__content__logo__item__imagine"
+            class="cooperation__logo__imagine"
             [src]="'assets/img/cooperationLogo/' + cooperationItem.source"
             [alt]="cooperationItem.alt"
           />
