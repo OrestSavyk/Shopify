@@ -8,6 +8,8 @@ import { COOPERATION_LOGOS_ITEMS, SERVICES_ITEMS } from './shopify.constant';
 })
 export class ShopifyComponent {
   servicesItems: any[] = SERVICES_ITEMS;
+
   cooperationLogosItems: any[] = COOPERATION_LOGOS_ITEMS;
+
   constructor() {}
 }
